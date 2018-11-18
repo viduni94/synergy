@@ -4,11 +4,10 @@
   "description": "Peyton Jones language conversion to Solidity",
   "main": "index.js",
   "scripts": {
-    "start": "nnode index.js",
+    "start": "node index.js",
     "compile": "npm run antlr4-js",
     "antlr4-js": "antlr4 -Dlanguage=JavaScript -lib grammar -o lib -visitor -Xexact-output-dir grammar/hccl.g4",
     "test": "echo \"Error: no test specified\" && exit 1"
-
   },
   "repository": {
     "type": "git",
@@ -21,6 +20,8 @@
   },
   "homepage": "https://github.com/viduni94/synergy#readme",
   "dependencies": {
-    "antlr4": "^4.7.1"
+    "antlr4": "^4.7.1",
+    "prompt": "^1.0.0",
+    "readline-sync": "^1.4.9"
   }
 }
