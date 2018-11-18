@@ -1,0 +1,26 @@
+{
+  "name": "synergy",
+  "version": "1.0.0",
+  "description": "Peyton Jones language conversion to Solidity",
+  "main": "index.js",
+  "scripts": {
+    "start": "nnode index.js",
+    "compile": "npm run antlr4-js",
+    "antlr4-js": "antlr4 -Dlanguage=JavaScript -lib grammar -o lib -visitor -Xexact-output-dir grammar/hccl.g4",
+    "test": "echo \"Error: no test specified\" && exit 1"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viduni94/synergy.git"
+  },
+  "author": "Viduni Wickramarachchi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/viduni94/synergy/issues"
+  },
+  "homepage": "https://github.com/viduni94/synergy#readme",
+  "dependencies": {
+    "antlr4": "^4.7.1"
+  }
+}
