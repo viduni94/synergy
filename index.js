@@ -1,4 +1,4 @@
-const antlr4 = require('antlr4');
+const antlr4 = require('antlr4/index');
 const hcclLexer = require('./lib/hcclLexer.js');
 const hcclParser = require('./lib/hcclParser.js');
 const hcclVisitor = require('./lib/hcclVisitor.js');
@@ -20,8 +20,9 @@ parser.buildParseTrees = true;
 const tree = parser.primitive();
 
 //console.log(tree);
+//console.log(ParseTreeVisitor.visit(tree));
 
-//console.log(tree.toStringTree(parser.ruleNames));
+console.log(tree.toStringTree(parser.ruleNames));
 //const tokenList = Visitor.visitTerminal(tree);
-
-console.log(extendedVisitor.visitTree(tree));
+console.log(extendedVisitor.printTerminals(tree));
+//console.log(extendedVisitor.visitTree(tree));

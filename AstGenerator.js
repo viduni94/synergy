@@ -1,13 +1,24 @@
-const TerminalNode = require('antlr4/tree/index');
-const hcclVisitor = require('./lib/hcclVisitor').hcclVisitor;
 
-function visitTree(ctx) {
-    const terminalNodes = [];
-    for(let i=0; i<ctx.getChildCount(); i++) {
-        if(ctx.getChild(i)  ) {
-            terminalNodes.push(ctx.getChild(i));
+
+function printTerminals(tree) {
+    let tokenList = [];
+    recurse(tree, tokenList);
+    return tokenList;
+
+}
+
+function recurse (tree, list) {
+    let a = ['(', ')', '<EOF>'];
+    if(tree.getChildCount() == 0) {
+        if(!a.includes(tree.getText())) {
+            list.push(tree.getText());
+            return;
         }
+    }
+
+    for(let i=0; i<tree.getChildCount(); i++) {
+        recurse(tree.getChild(i), list);
     }
 }
 
-exports.visitTree = visitTree;
+exports.printTerminals = printTerminals;
