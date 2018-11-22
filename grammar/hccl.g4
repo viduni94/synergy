@@ -13,14 +13,14 @@ basicContract
 
 basicPrimitive
     : zeroContract #ZERO
-    | oneContract Currency #ONE
+    | oneContract #ONE
     ;
 
 zeroContract
     : ZeroKeyword;
 
 oneContract
-    : OneKeyword;
+    : OneKeyword Currency;
 
 compositePrimitve
     : scale #SCALE_CONTRACT
