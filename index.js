@@ -17,7 +17,7 @@ const parser = new hcclParser.hcclParser(tokens); //create parser
 const visitor = new hcclVisitor.hcclVisitor();
 parser.buildParseTrees = true;
 
-const tree = parser.primitive();
+const tree = parser.complexContract();
 
 //console.log(tree);
 //console.log(ParseTreeVisitor.visit(tree));
