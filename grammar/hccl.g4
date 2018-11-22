@@ -3,17 +3,17 @@ grammar hccl;
 // END:Header
 
 //Parser Rules
-primitive
-    : ((contractIdentifier ( ',' contractIdentifier)*)  '=' )? basicContract EOF? #BASIC_CONTRACT
-    | ((contractIdentifier ( ',' contractIdentifier)*)  '=' )? compositeContract EOF? #COMP_CONTRACT
-    ;
-
-contractIdentifier
-    : ID;
+complexContract
+    : basicContract
+    | basicContract Operator complexContract;
 
 basicContract
+    : basicPrimitive
+    | compositePrimitve;
+
+basicPrimitive
     : zeroContract #ZERO
-    | oneContract currencyType #ONE
+    | oneContract Currency #ONE
     ;
 
 zeroContract
@@ -22,11 +22,9 @@ zeroContract
 oneContract
     : OneKeyword;
 
-compositeContract
+compositePrimitve
     : scale #SCALE_CONTRACT
     | give #GIVE_CONTRACT
-    | and #AND_CONTRACT
-    | or #OR_CONTRACT
     | truncate #TRUNCATE_CONTRACT
     | then #THEN_CONTRACT
     | get #GET_CONTRACT
@@ -36,34 +34,28 @@ compositeContract
 //    | when
 //    | until ;
 
-currencyType
-    : Currency;
-
 scale
-    : Scale ObsDouble '(' primitive ')';
+    : Scale ObsDouble '(' complexContract ')';
 
 give
-    : Give '(' primitive ')';
-
-and
-    : And '(' primitive primitive ')';
-
-or
-    : Or '(' primitive primitive ')';
+    : Give '(' complexContract ')';
 
 truncate
-    : Truncate Date '(' primitive ')';
+    : Truncate Date '(' complexContract ')';
 
 then
-    : Then '(' primitive primitive ')';
+    : Then '(' complexContract complexContract ')';
 
 get
-    : Get '(' primitive ')';
+    : Get '(' complexContract ')';
 
 anytime
-    : Anytime '(' primitive ')';
+    : Anytime '(' complexContract ')';
 
 //Lexer Rules
+Operator
+    : '`and`'
+    | '`or`';
 
 Currency
     : 'USD'
