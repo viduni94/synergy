@@ -20,7 +20,7 @@ function recurse (tree, list) {
     }
 
     for(let i =0; i<tempList.length; i++) {
-        let keywordList = ['get', 'scale', 'one', 'zero', 'give', 'truncate', 'then', 'anytime', '`and`', '`or`'];
+        let keywordList = ['get', 'scale', 'oneContract', 'zero', 'give', 'truncate', 'then', 'anytime', '`and`', '`or`'];
         if(keywordList.includes(tempList[i])) {
             currentKeyword = tempList[i];
         }
@@ -48,8 +48,16 @@ function recurse (tree, list) {
             truncateObj.contractValue = tempList[2];
             list.push(truncateObj);
         }
-        case 'one': {
-
+        case 'oneContract': {
+            list.push(tempList[1]);
+        }
+        case '`and`': {
+            
+        }
+        default: {
+            for(let i=0; i<tempList.length; i++) {
+                list[i] = tempList[i];
+            }
         }
 
     }
