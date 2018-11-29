@@ -5,6 +5,7 @@ function postOrderTraversal(tree) {
 function recurse (tree, list) {
     let tempList = [];
     let currentKeyword;
+    let n = 1;
 
     if(tree.getChildCount() == 0) {
         let nodeText = tree.getText();
@@ -31,10 +32,13 @@ function recurse (tree, list) {
             list.push(tempList[1]+tempList[2]);
         }
         case 'get': {
-            let obj = {};
-            obj.proceed = function() {
-                console.log("Received");
-            }
+            // let getObj = {};
+            // getObj.proceed = function() {
+            //     console.log("Received");
+            // }
+            let contractName = "c"+n;
+            let contract = "" +
+                "";
         }
         case 'give': {
             let giveObj = {};
@@ -52,7 +56,7 @@ function recurse (tree, list) {
             list.push(tempList[1]);
         }
         case '`and`': {
-            
+
         }
         default: {
             for(let i=0; i<tempList.length; i++) {
