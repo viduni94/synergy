@@ -38,6 +38,7 @@ function recurse (tree, list) {
             // }
             let contractName = "c"+n;
             let contract = "" +
+                "contract $contractName is baseContract {" +
                 "";
         }
         case 'give': {
