@@ -1,3 +1,5 @@
+const fs = require('fs');
+
 function postOrderTraversal(tree) {
 
 }
@@ -32,20 +34,50 @@ function recurse (tree, list) {
             list.push(tempList[1]+tempList[2]);
         }
         case 'get': {
-            // let getObj = {};
-            // getObj.proceed = function() {
-            //     console.log("Received");
-            // }
+
             let contractName = "c"+n;
             let contract = "" +
-                "contract $contractName is baseContract {" +
-                "";
+                "pragma solidity ^0.4.21;\n" +
+                "pragma experimental ABIEncoderV2;\n" +
+                "import {BaseContract, Marketplace} from './Marketplace.sol';\n"+
+                "\n"+
+                "contract $contractName is baseContract {\n" +
+                "\n"+
+                "constructor(Marketplace marketplace, string horizon, int value) public BaseContract(marketplace, value, horizon) {\n" +
+                "}\n";
+
+            n++;
+
+            fs.writeFile("./contractFiles/$contractName.sol", contract, function(err) {
+                if(err) {
+                    return console.log(err);
+                }
+
+                console.log("The file was saved!");
+            });
         }
         case 'give': {
-            let giveObj = {};
-            giveObj.proceed = function() {
-                console.log("Sent");
-            }
+
+            let contractName = "c"+n;
+            let contract = "" +
+                "pragma solidity ^0.4.21;\n" +
+                "pragma experimental ABIEncoderV2;\n" +
+                "import {BaseContract, Marketplace} from './Marketplace.sol';\n"+
+                "\n"+
+                "contract $contractName is baseContract {\n" +
+                "\n"+
+                "constructor(Marketplace marketplace, string horizon, int value) public BaseContract(marketplace, value, horizon) {\n" +
+                "}\n";
+
+            n++;
+
+            fs.writeFile("./contractFiles/$contractName.sol", contract, function(err) {
+                if(err) {
+                    return console.log(err);
+                }
+
+                console.log("The file was saved!");
+            });
         }
         case 'truncate': {
             let truncateObj = {};

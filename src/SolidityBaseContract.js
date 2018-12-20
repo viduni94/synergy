@@ -6,14 +6,17 @@ let BaseContract =
     "\n" +
     "    Marketplace public marketplace_;\n" +
     "    int public scale_;\n" +
+    "    int value_;\n"+
+    "    string horizon_;\n"+
     "\n" +
     "    address public creator_;\n" +
     "    bool public alive_ = true;\n" +
     "\n" +
-    "    constructor(Marketplace marketplace, int scale) public {\n" +
+    "    constructor(Marketplace marketplace, int value, string horizon) public {\n" +
     "    \tmarketplace_ = marketplace;\n" +
-    "    \tscale_ = scale;\n" +
     "    \tcreator_ = msg.sender;\n" +
+    "    \tvalue_=value;\n"+
+    "    \thorizon_ = horizon;\n"+
     "    }\n" +
     "\n" +
     "    function getHolder() internal view returns(address) {\n" +
