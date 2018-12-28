@@ -1,7 +1,19 @@
 const fs = require('fs');
 
-function postOrderTraversal(tree) {
+function contractCreation(tree) {
+    let list = [];
+    let contractName = "wrapper"
+    recurse(tree, list);
+    let contract = "pragma solidity ^0.4.21;\n" +
+        "pragma experimental ABIEncoderV2;\n" +
+        "import {BaseContract, Marketplace} from './Marketplace.sol';\n"+
+        "contract $contractName is baseContract {\n" +
+        "    constructor(Marketplace marketplace, string horizon, int value) public BaseContract(marketplace, value, horizon) {\n" +
+        "    }\n";
+        "}\n";
+    if(list[0] === "get" || list[0] === "give"){
 
+    }
 }
 
 function recurse (tree, list) {
@@ -31,53 +43,56 @@ function recurse (tree, list) {
 
     switch(currentKeyword) {
         case 'scale': {
-            list.push(tempList[1]+tempList[2]);
+            list.push(tempList[1]+" "+tempList[2]);
         }
         case 'get': {
-
+            let commodity = tempList[0].contractValue.split(" ")[1];
+            let quantity = tempList[0].contractValue.split(" ")[0];
             let contractName = "c"+n;
             let contract = "" +
-                "pragma solidity ^0.4.21;\n" +
-                "pragma experimental ABIEncoderV2;\n" +
-                "import {BaseContract, Marketplace} from './Marketplace.sol';\n"+
-                "\n"+
                 "contract $contractName is baseContract {\n" +
-                "\n"+
-                "constructor(Marketplace marketplace, string horizon, int value) public BaseContract(marketplace, value, horizon) {\n" +
+                "    constructor(Marketplace marketplace, string horizon, int value) public BaseContract(marketplace, value, horizon) {\n" +
+                "    }\n"+
+                "    function proceed() public{\n"+
+                "        marketplace.receive($commodity, $quantity)" +
+                "    }\n"+
                 "}\n";
 
             n++;
 
-            fs.writeFile("./contractFiles/$contractName.sol", contract, function(err) {
+            fs.appendFile("./contractFiles/test.sol", contract, function(err) {
                 if(err) {
                     return console.log(err);
                 }
 
                 console.log("The file was saved!");
             });
+
+            list.push("get");
         }
         case 'give': {
 
             let contractName = "c"+n;
             let contract = "" +
-                "pragma solidity ^0.4.21;\n" +
-                "pragma experimental ABIEncoderV2;\n" +
-                "import {BaseContract, Marketplace} from './Marketplace.sol';\n"+
-                "\n"+
                 "contract $contractName is baseContract {\n" +
-                "\n"+
-                "constructor(Marketplace marketplace, string horizon, int value) public BaseContract(marketplace, value, horizon) {\n" +
+                "    constructor(Marketplace marketplace, string horizon, int value) public BaseContract(marketplace, value, horizon) {\n" +
+                "    }\n"+
+                "    function proceed() public{\n"+
+                "        marketplace.receive($commodity, $quantity)" +
+                "    }\n"+
                 "}\n";
 
             n++;
 
-            fs.writeFile("./contractFiles/$contractName.sol", contract, function(err) {
+            fs.appendFile("./contractFiles/test.sol", contract, function(err) {
                 if(err) {
                     return console.log(err);
                 }
 
                 console.log("The file was saved!");
             });
+
+            list.push("give");
         }
         case 'truncate': {
             let truncateObj = {};

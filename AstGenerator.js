@@ -1,5 +1,3 @@
-
-
 function printTerminals(tree) {
     let tokenList = [];
     recurse(tree, tokenList);
