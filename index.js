@@ -2,7 +2,7 @@ const antlr4 = require('antlr4/index');
 const hcclLexer = require('./lib/hcclLexer.js');
 const hcclParser = require('./lib/hcclParser.js');
 const hcclVisitor = require('./lib/hcclVisitor.js');
-const extendedVisitor = require("./AstGenerator");
+const extendedVisitor = require("./code-generation/astGenerator");
 const readline = require('readline-sync');
 
 const input = readline.question("Enter the contract\n");
