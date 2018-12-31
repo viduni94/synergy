@@ -18,25 +18,7 @@ let BaseContract =
     "    \tvalue_=value;\n"+
     "    \thorizon_ = horizon;\n"+
     "    }\n" +
-    "\n" +
-    "    function getHolder() internal view returns(address) {\n" +
-    "\t\taddress holder;\n" +
-    "\t\t(,holder,,) = marketplace_.contracts_(this);\n" +
-    "\t\treturn holder;\n" +
-    "    }\n" +
-    "\n" +
-    "    function getCounterparty() internal view returns(address) {\n" +
-    "\t\taddress counterparty;\n" +
-    "\t\t(counterparty,,,) = marketplace_.contracts_(this);\n" +
-    "\t\treturn counterparty;\n" +
-    "    }\n" +
-    "\n" +
-    "    function getCreator() internal view returns(address) {\n" +
-    "\t\taddress creator;\n" +
-    "\t\t(,,creator,) = marketplace_.contracts_(this);\n" +
-    "\t\treturn creator;\n" +
-    "    }\n" +
-    "\n" +
+    "\n"+
     "    function proceed() public;\n" +
     "\n" +
     "    function receive(Marketplace.Commodity commodity, int quantity) internal alive {\n" +

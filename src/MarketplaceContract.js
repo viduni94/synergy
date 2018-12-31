@@ -21,24 +21,6 @@ let BaseContract =
     "    \tcreator_ = msg.sender;\n" +
     "    }\n" +
     "\n" +
-    "    function getHolder() internal view returns(address) {\n" +
-    "\t\taddress holder;\n" +
-    "\t\t(,holder,,) = marketplace_.contracts_(this);\n" +
-    "\t\treturn holder;\n" +
-    "    }\n" +
-    "\n" +
-    "    function getCounterparty() internal view returns(address) {\n" +
-    "\t\taddress counterparty;\n" +
-    "\t\t(counterparty,,,) = marketplace_.contracts_(this);\n" +
-    "\t\treturn counterparty;\n" +
-    "    }\n" +
-    "\n" +
-    "    function getCreator() internal view returns(address) {\n" +
-    "\t\taddress creator;\n" +
-    "\t\t(,,creator,) = marketplace_.contracts_(this);\n" +
-    "\t\treturn creator;\n" +
-    "    }\n" +
-    "\n" +
     "    function proceed() public;\n" +
     "\n" +
     "    function receive(Marketplace.Commodity commodity, int quantity) internal alive {\n" +
@@ -113,7 +95,7 @@ let Marketplace =
     "          balances_[c.holder][uint(commodity)] += quantity;\n" +
     "      }\n" +
     "\n" +
-    "      function delegate(address newContract) public {\n" +
+    "      function get(address newContract) public {\n" +
     "          require(contracts_[msg.sender].signed == true);\n" +
     "          contracts_[newContract] = ContractMetadata(\n" +
     "              contracts_[msg.sender].counterparty,\n" +

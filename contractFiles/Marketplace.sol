@@ -56,7 +56,7 @@ contract Marketplace {
           balances_[c.holder][uint(commodity)] += quantity;
       }
 
-      function delegate(address newContract) public {
+      function get(address newContract) public {
           require(contracts_[msg.sender].signed == true);
           contracts_[newContract] = ContractMetadata(
               contracts_[msg.sender].counterparty,
@@ -113,24 +113,6 @@ contract BaseContract {
     	marketplace_ = marketplace;
     	scale_ = scale;
     	creator_ = msg.sender;
-    }
-
-    function getHolder() internal view returns(address) {
-		address holder;
-		(,holder,,) = marketplace_.contracts_(this);
-		return holder;
-    }
-
-    function getCounterparty() internal view returns(address) {
-		address counterparty;
-		(counterparty,,,) = marketplace_.contracts_(this);
-		return counterparty;
-    }
-
-    function getCreator() internal view returns(address) {
-		address creator;
-		(,,creator,) = marketplace_.contracts_(this);
-		return creator;
     }
 
     function proceed() public;
