@@ -3,9 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="db63df21-1594-4c89-96fe-5fbc485fe277" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contractFiles/Marketplace.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contractFiles/Marketplace.sol" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MarketplaceContract.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/MarketplaceContract.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SolidityBaseContract.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/SolidityBaseContract.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code-generation/treeWalker.js" beforeDir="false" afterPath="$PROJECT_DIR$/code-generation/treeWalker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/hccl.interp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/hccl.interp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/hcclLexer.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/hcclLexer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/hcclListener.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/hcclListener.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/hcclParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/hcclParser.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,37 +26,38 @@
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="2" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="g4" value="4" />
+          <entry key="g4" value="6" />
           <entry key="interp" value="2" />
-          <entry key="js" value="37" />
+          <entry key="js" value="39" />
           <entry key="json" value="1" />
           <entry key="md" value="1" />
-          <entry key="sol" value="1" />
+          <entry key="sol" value="9" />
           <entry key="tokens" value="2" />
           <entry key="ts" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="ANTLR v4 grammar file" value="4" />
+          <entry key="ANTLR v4 grammar file" value="6" />
           <entry key="JSON" value="1" />
-          <entry key="JavaScript" value="37" />
+          <entry key="JavaScript" value="39" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="4" />
-          <entry key="Solidity file" value="1" />
+          <entry key="Solidity file" value="9" />
           <entry key="TypeScript" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="g4" value="177" />
-          <entry key="js" value="5646" />
+          <entry key="js" value="7194" />
           <entry key="json" value="74" />
           <entry key="sol" value="6" />
         </counts>
@@ -62,7 +66,7 @@
         <counts>
           <entry key="ANTLR v4 grammar file" value="177" />
           <entry key="JSON" value="74" />
-          <entry key="JavaScript" value="5646" />
+          <entry key="JavaScript" value="7194" />
           <entry key="Solidity file" value="6" />
         </counts>
       </usages-collector>
@@ -73,60 +77,37 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="47" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
+            <state relative-caret-position="300">
+              <caret line="20" column="8" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/contractFiles/Marketplace.sol">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="563">
-              <caret line="73" column="47" selection-start-line="73" selection-start-column="47" selection-end-line="73" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MarketplaceContract.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="571">
+            <state relative-caret-position="454">
               <caret line="97" column="23" selection-start-line="97" selection-start-column="23" selection-end-line="97" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/code-generation/treeWalker.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-163">
-              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SolidityBaseContract.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grammar/hccl.g4">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+            <state relative-caret-position="60">
+              <caret line="137" column="42" selection-start-line="137" selection-start-column="42" selection-end-line="137" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/code-generation/astGenerator.js">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="29" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="29" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -144,6 +125,8 @@
       <find>ctx</find>
       <find>gettex</find>
       <find>get</find>
+      <find>consol</find>
+      <find>console</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -170,11 +153,11 @@
         <option value="$PROJECT_DIR$/grammar/hccl-copy.g4" />
         <option value="$PROJECT_DIR$/AstGenerator.js" />
         <option value="$PROJECT_DIR$/grammar/hccl.g4" />
-        <option value="$PROJECT_DIR$/code-generation/treeWalker.js" />
-        <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/src/SolidityBaseContract.js" />
         <option value="$PROJECT_DIR$/contractFiles/Marketplace.sol" />
         <option value="$PROJECT_DIR$/src/MarketplaceContract.js" />
+        <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/code-generation/treeWalker.js" />
       </list>
     </option>
   </component>
@@ -203,7 +186,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1917" />
     <option name="height" value="1120" />
@@ -239,7 +222,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -251,28 +233,29 @@
             <path>
               <item name="synergy" type="b2602c69:ProjectViewProjectNode" />
               <item name="synergy" type="462c0819:PsiDirectoryNode" />
-              <item name="code-generation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="synergy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="synergy" type="462c0819:PsiDirectoryNode" />
               <item name="contractFiles" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="synergy" type="b2602c69:ProjectViewProjectNode" />
               <item name="synergy" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="grammar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="synergy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="synergy" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546239024984" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546349623502" />
     <property name="javascript.nodejs.core.library.configured.version" value="8.8.1" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -361,23 +344,23 @@
       <workItem from="1545273532473" duration="5787000" />
       <workItem from="1545363472958" duration="2516000" />
       <workItem from="1545862531831" duration="10188000" />
-      <workItem from="1546149999975" duration="5238000" />
+      <workItem from="1546149999975" duration="15633000" />
+      <workItem from="1546341070772" duration="8473000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79457000" />
+    <option name="totallyTimeSpent" value="98325000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1917" height="1120" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1440" height="820" extended-state="6" />
     <layout>
       <window_info id="UI Designer" order="0" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.17226666" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.17453505" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Inspection Results" order="0" weight="0.32915717" />
       <window_info anchor="bottom" id="Tool Output" order="1" />
@@ -385,9 +368,9 @@
       <window_info anchor="bottom" id="Database Changes" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="ANTLR Preview" order="5" />
-      <window_info anchor="bottom" id="Terminal" order="6" visible="true" weight="0.21984436" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="6" visible="true" weight="0.32142857" />
       <window_info anchor="bottom" id="Message" order="7" />
-      <window_info anchor="bottom" id="Find" order="8" />
+      <window_info anchor="bottom" id="Find" order="8" weight="0.32967034" />
       <window_info anchor="bottom" id="Run" order="9" />
       <window_info anchor="bottom" id="Debug" order="10" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
@@ -564,27 +547,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grammar/hccl.g4">
+    <entry file="file://$PROJECT_DIR$/contractFiles/Marketplace.sol">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code-generation/astGenerator.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="47" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code-generation/treeWalker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-163">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        <state relative-caret-position="1095">
+          <caret line="73" column="47" selection-start-line="73" selection-start-column="47" selection-end-line="73" selection-end-column="47" />
         </state>
       </provider>
     </entry>
@@ -595,17 +561,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/contractFiles/Marketplace.sol">
+    <entry file="file://$PROJECT_DIR$/grammar/hccl.g4">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="563">
-          <caret line="73" column="47" selection-start-line="73" selection-start-column="47" selection-end-line="73" selection-end-column="47" />
+        <state relative-caret-position="283">
+          <caret line="22" column="25" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/tree/test/tree.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="65" column="26" lean-forward="true" selection-start-line="65" selection-start-column="26" selection-end-line="65" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/tree/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code-generation/astGenerator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MarketplaceContract.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="571">
+        <state relative-caret-position="454">
           <caret line="97" column="23" selection-start-line="97" selection-start-column="23" selection-end-line="97" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="8" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.sol">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code-generation/treeWalker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="137" column="42" selection-start-line="137" selection-start-column="42" selection-end-line="137" selection-end-column="42" />
         </state>
       </provider>
     </entry>

@@ -4,6 +4,7 @@ const hcclParser = require('./lib/hcclParser.js');
 const hcclVisitor = require('./lib/hcclVisitor.js');
 const extendedVisitor = require("./code-generation/astGenerator");
 const readline = require('readline-sync');
+const contractCreation = require('./code-generation/treeWalker');
 
 const input = readline.question("Enter the contract\n");
 
@@ -22,7 +23,9 @@ const tree = parser.complexContract();
 //console.log(tree);
 //console.log(ParseTreeVisitor.visit(tree));
 
-console.log(tree.toStringTree(parser.ruleNames));
+//console.log(tree.toStringTree(parser.ruleNames));
 //const tokenList = Visitor.visitTerminal(tree);
-console.log(extendedVisitor.printTerminals(tree));
+//console.log(extendedVisitor.printTerminals(tree));
 //console.log(extendedVisitor.visitTree(tree));
+contractCreation.contractCreation(tree);
+//console.log(tree);
