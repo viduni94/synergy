@@ -5,7 +5,7 @@ contract c is baseContract {
    constructor(Marketplace marketplace, string horizon, int value) public BaseContract(marketplace, value, horizon) {
    }
    function proceed() public{
-       marketplace.receive(GBP, 100)   }
+       marketplace.receive(USD, 100)   }
 }
 contract wrapper is baseContract {
    constructor(Marketplace marketplace, string horizon, int value) public BaseContract(marketplace, value, horizon) {
