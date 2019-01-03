@@ -3,6 +3,33 @@
   <component name="ChangeListManager">
     <list default="true" id="db63df21-1594-4c89-96fe-5fbc485fe277" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code-generation/treeWalker.js" beforeDir="false" afterPath="$PROJECT_DIR$/code-generation/treeWalker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammar/hccl.g4" beforeDir="false" afterPath="$PROJECT_DIR$/grammar/hccl.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammar/output1/hccl.interp" beforeDir="false" afterPath="$PROJECT_DIR$/grammar/output1/hccl.interp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammar/output1/hcclBaseListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/grammar/output1/hcclBaseListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammar/output1/hcclBaseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/grammar/output1/hcclBaseListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammar/output1/hcclListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/grammar/output1/hcclListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammar/output1/hcclListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/grammar/output1/hcclListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammar/output1/hcclParser$ANYTIME_CONTRACTContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/grammar/output1/hcclParser$ANYTIME_CONTRACTContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammar/output1/hcclParser$AnytimeContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/grammar/output1/hcclParser$AnytimeContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammar/output1/hcclParser$BasicPrimitiveContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/grammar/output1/hcclParser$BasicPrimitiveContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammar/output1/hcclParser$CompositePrimitveContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/grammar/output1/hcclParser$CompositePrimitveContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammar/output1/hcclParser$GET_CONTRACTContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/grammar/output1/hcclParser$GET_CONTRACTContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammar/output1/hcclParser$GIVE_CONTRACTContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/grammar/output1/hcclParser$GIVE_CONTRACTContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammar/output1/hcclParser$GetContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/grammar/output1/hcclParser$GetContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammar/output1/hcclParser$GiveContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/grammar/output1/hcclParser$GiveContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammar/output1/hcclParser$ONEContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/grammar/output1/hcclParser$ONEContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammar/output1/hcclParser$OneContractContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/grammar/output1/hcclParser$OneContractContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammar/output1/hcclParser$SCALE_CONTRACTContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/grammar/output1/hcclParser$SCALE_CONTRACTContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammar/output1/hcclParser$ScaleContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/grammar/output1/hcclParser$ScaleContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammar/output1/hcclParser$THEN_CONTRACTContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/grammar/output1/hcclParser$THEN_CONTRACTContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammar/output1/hcclParser$TRUNCATE_CONTRACTContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/grammar/output1/hcclParser$TRUNCATE_CONTRACTContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammar/output1/hcclParser$ThenContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/grammar/output1/hcclParser$ThenContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammar/output1/hcclParser$TruncateContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/grammar/output1/hcclParser$TruncateContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammar/output1/hcclParser$ZEROContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/grammar/output1/hcclParser$ZEROContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammar/output1/hcclParser$ZeroContractContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/grammar/output1/hcclParser$ZeroContractContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammar/output1/hcclParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/grammar/output1/hcclParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammar/output1/hcclParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/grammar/output1/hcclParser.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,42 +54,42 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="g4" value="6" />
+          <entry key="g4" value="7" />
           <entry key="gitattributes" value="1" />
           <entry key="interp" value="2" />
           <entry key="js" value="39" />
           <entry key="json" value="1" />
           <entry key="md" value="1" />
-          <entry key="sol" value="14" />
+          <entry key="sol" value="16" />
           <entry key="tokens" value="2" />
           <entry key="ts" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="ANTLR v4 grammar file" value="6" />
+          <entry key="ANTLR v4 grammar file" value="7" />
           <entry key="JSON" value="1" />
           <entry key="JavaScript" value="39" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="5" />
-          <entry key="Solidity file" value="14" />
+          <entry key="Solidity file" value="16" />
           <entry key="TypeScript" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="g4" value="177" />
-          <entry key="js" value="8198" />
+          <entry key="g4" value="290" />
+          <entry key="js" value="8277" />
           <entry key="json" value="74" />
-          <entry key="sol" value="6" />
+          <entry key="sol" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="ANTLR v4 grammar file" value="177" />
+          <entry key="ANTLR v4 grammar file" value="290" />
           <entry key="JSON" value="74" />
-          <entry key="JavaScript" value="8198" />
-          <entry key="Solidity file" value="6" />
+          <entry key="JavaScript" value="8277" />
+          <entry key="Solidity file" value="31" />
         </counts>
       </usages-collector>
     </session>
@@ -81,7 +108,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MarketplaceContract.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1324">
+            <state relative-caret-position="1455">
               <caret line="97" column="23" selection-start-line="97" selection-start-column="23" selection-end-line="97" selection-end-column="23" />
             </state>
           </provider>
@@ -90,8 +117,35 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/code-generation/treeWalker.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="129" column="9" lean-forward="true" selection-start-line="129" selection-start-column="9" selection-end-line="129" selection-end-column="9" />
+            <state relative-caret-position="1770">
+              <caret line="118" column="36" selection-start-line="118" selection-start-column="36" selection-end-line="118" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/contractFiles/one.sol">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/contractFiles/test.sol">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grammar/hccl.g4">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1140">
+              <caret line="76" column="13" selection-start-line="76" selection-start-column="13" selection-end-line="76" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -147,13 +201,14 @@
         <option value="$PROJECT_DIR$/lib/hcclVisitor.js" />
         <option value="$PROJECT_DIR$/grammar/hccl-copy.g4" />
         <option value="$PROJECT_DIR$/AstGenerator.js" />
-        <option value="$PROJECT_DIR$/grammar/hccl.g4" />
         <option value="$PROJECT_DIR$/src/SolidityBaseContract.js" />
         <option value="$PROJECT_DIR$/contractFiles/Marketplace.sol" />
         <option value="$PROJECT_DIR$/src/MarketplaceContract.js" />
         <option value="$PROJECT_DIR$/index.js" />
-        <option value="$PROJECT_DIR$/code-generation/treeWalker.js" />
         <option value="$PROJECT_DIR$/.gitattributes" />
+        <option value="$PROJECT_DIR$/grammar/hccl.g4" />
+        <option value="$PROJECT_DIR$/contractFiles/one.sol" />
+        <option value="$PROJECT_DIR$/code-generation/treeWalker.js" />
       </list>
     </option>
   </component>
@@ -182,10 +237,10 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="820" />
+    <option name="width" value="1919" />
+    <option name="height" value="1119" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -236,6 +291,11 @@
               <item name="synergy" type="462c0819:PsiDirectoryNode" />
               <item name="grammar" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="synergy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="synergy" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -246,7 +306,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546425453309" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546476453142" />
     <property name="javascript.nodejs.core.library.configured.version" value="8.8.1" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -336,15 +396,15 @@
       <workItem from="1545363472958" duration="2516000" />
       <workItem from="1545862531831" duration="10188000" />
       <workItem from="1546149999975" duration="15633000" />
-      <workItem from="1546341070772" duration="18176000" />
+      <workItem from="1546341070772" duration="22637000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108028000" />
+    <option name="totallyTimeSpent" value="112489000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1919" height="1119" extended-state="6" />
+    <frame x="0" y="23" width="1919" height="1119" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="UI Designer" order="0" />
@@ -352,7 +412,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.12999468" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.12999468" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Inspection Results" order="0" weight="0.32915717" />
       <window_info anchor="bottom" id="Tool Output" order="1" weight="0.32967034" />
@@ -360,7 +420,7 @@
       <window_info anchor="bottom" id="Database Changes" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="ANTLR Preview" order="5" weight="0.32967034" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="6" visible="true" weight="0.2794547" />
+      <window_info anchor="bottom" id="Terminal" order="6" visible="true" weight="0.2794547" />
       <window_info anchor="bottom" id="Message" order="7" />
       <window_info anchor="bottom" id="Find" order="8" weight="0.32967034" />
       <window_info anchor="bottom" id="Run" order="9" />
@@ -546,13 +606,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grammar/hccl.g4">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="22" column="25" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/tree/test/tree.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
@@ -562,13 +615,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/tree/index.js">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code-generation/astGenerator.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="29" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="29" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -584,22 +630,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MarketplaceContract.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1324">
-          <caret line="97" column="23" selection-start-line="97" selection-start-column="23" selection-end-line="97" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test.sol">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contractFiles/test.sol">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitattributes">
       <provider selected="true" editor-type-id="text-editor">
@@ -608,10 +644,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/code-generation/astGenerator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grammar/hccl.g4">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="76" column="13" selection-start-line="76" selection-start-column="13" selection-end-line="76" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MarketplaceContract.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1455">
+          <caret line="97" column="23" selection-start-line="97" selection-start-column="23" selection-end-line="97" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contractFiles/test.sol">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contractFiles/one.sol">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/code-generation/treeWalker.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="129" column="9" lean-forward="true" selection-start-line="129" selection-start-column="9" selection-end-line="129" selection-end-column="9" />
+        <state relative-caret-position="1770">
+          <caret line="118" column="36" selection-start-line="118" selection-start-column="36" selection-end-line="118" selection-end-column="36" />
         </state>
       </provider>
     </entry>

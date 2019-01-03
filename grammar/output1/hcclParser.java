@@ -24,11 +24,11 @@ public class hcclParser extends Parser {
 		RULE_complexContract = 0, RULE_basicContract = 1, RULE_basicPrimitive = 2, 
 		RULE_zeroContract = 3, RULE_oneContract = 4, RULE_compositePrimitve = 5, 
 		RULE_scale = 6, RULE_give = 7, RULE_truncate = 8, RULE_then = 9, RULE_get = 10, 
-		RULE_anytime = 11;
+		RULE_anytime = 11, RULE_and = 12, RULE_or = 13;
 	public static final String[] ruleNames = {
 		"complexContract", "basicContract", "basicPrimitive", "zeroContract", 
 		"oneContract", "compositePrimitve", "scale", "give", "truncate", "then", 
-		"get", "anytime"
+		"get", "anytime", "and", "or"
 	};
 
 	private static final String[] _LITERAL_NAMES = {
@@ -116,24 +116,24 @@ public class hcclParser extends Parser {
 		ComplexContractContext _localctx = new ComplexContractContext(_ctx, getState());
 		enterRule(_localctx, 0, RULE_complexContract);
 		try {
-			setState(29);
+			setState(33);
 			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,0,_ctx) ) {
 			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(24);
+				setState(28);
 				basicContract();
 				}
 				break;
 			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(25);
+				setState(29);
 				basicContract();
-				setState(26);
+				setState(30);
 				match(Operator);
-				setState(27);
+				setState(31);
 				complexContract();
 				}
 				break;
@@ -175,26 +175,28 @@ public class hcclParser extends Parser {
 		BasicContractContext _localctx = new BasicContractContext(_ctx, getState());
 		enterRule(_localctx, 2, RULE_basicContract);
 		try {
-			setState(33);
+			setState(37);
 			_errHandler.sync(this);
 			switch (_input.LA(1)) {
 			case OneKeyword:
 			case ZeroKeyword:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(31);
+				setState(35);
 				basicPrimitive();
 				}
 				break;
 			case Scale:
 			case Give:
+			case And:
+			case Or:
 			case Truncate:
 			case Then:
 			case Get:
 			case Anytime:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(32);
+				setState(36);
 				compositePrimitve();
 				}
 				break;
@@ -257,14 +259,14 @@ public class hcclParser extends Parser {
 		BasicPrimitiveContext _localctx = new BasicPrimitiveContext(_ctx, getState());
 		enterRule(_localctx, 4, RULE_basicPrimitive);
 		try {
-			setState(37);
+			setState(41);
 			_errHandler.sync(this);
 			switch (_input.LA(1)) {
 			case ZeroKeyword:
 				_localctx = new ZEROContext(_localctx);
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(35);
+				setState(39);
 				zeroContract();
 				}
 				break;
@@ -272,7 +274,7 @@ public class hcclParser extends Parser {
 				_localctx = new ONEContext(_localctx);
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(36);
+				setState(40);
 				oneContract();
 				}
 				break;
@@ -313,7 +315,7 @@ public class hcclParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(39);
+			setState(43);
 			match(ZeroKeyword);
 			}
 		}
@@ -351,9 +353,9 @@ public class hcclParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(41);
+			setState(45);
 			match(OneKeyword);
-			setState(42);
+			setState(46);
 			match(Currency);
 			}
 		}
@@ -377,6 +379,20 @@ public class hcclParser extends Parser {
 		public CompositePrimitveContext() { }
 		public void copyFrom(CompositePrimitveContext ctx) {
 			super.copyFrom(ctx);
+		}
+	}
+	public static class AND_CONTRACTContext extends CompositePrimitveContext {
+		public AndContext and() {
+			return getRuleContext(AndContext.class,0);
+		}
+		public AND_CONTRACTContext(CompositePrimitveContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof hcclListener ) ((hcclListener)listener).enterAND_CONTRACT(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof hcclListener ) ((hcclListener)listener).exitAND_CONTRACT(this);
 		}
 	}
 	public static class ANYTIME_CONTRACTContext extends CompositePrimitveContext {
@@ -405,6 +421,20 @@ public class hcclParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof hcclListener ) ((hcclListener)listener).exitTRUNCATE_CONTRACT(this);
+		}
+	}
+	public static class OR_CONTRACTContext extends CompositePrimitveContext {
+		public OrContext or() {
+			return getRuleContext(OrContext.class,0);
+		}
+		public OR_CONTRACTContext(CompositePrimitveContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof hcclListener ) ((hcclListener)listener).enterOR_CONTRACT(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof hcclListener ) ((hcclListener)listener).exitOR_CONTRACT(this);
 		}
 	}
 	public static class SCALE_CONTRACTContext extends CompositePrimitveContext {
@@ -468,14 +498,14 @@ public class hcclParser extends Parser {
 		CompositePrimitveContext _localctx = new CompositePrimitveContext(_ctx, getState());
 		enterRule(_localctx, 10, RULE_compositePrimitve);
 		try {
-			setState(50);
+			setState(56);
 			_errHandler.sync(this);
 			switch (_input.LA(1)) {
 			case Scale:
 				_localctx = new SCALE_CONTRACTContext(_localctx);
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(44);
+				setState(48);
 				scale();
 				}
 				break;
@@ -483,7 +513,7 @@ public class hcclParser extends Parser {
 				_localctx = new GIVE_CONTRACTContext(_localctx);
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(45);
+				setState(49);
 				give();
 				}
 				break;
@@ -491,7 +521,7 @@ public class hcclParser extends Parser {
 				_localctx = new TRUNCATE_CONTRACTContext(_localctx);
 				enterOuterAlt(_localctx, 3);
 				{
-				setState(46);
+				setState(50);
 				truncate();
 				}
 				break;
@@ -499,7 +529,7 @@ public class hcclParser extends Parser {
 				_localctx = new THEN_CONTRACTContext(_localctx);
 				enterOuterAlt(_localctx, 4);
 				{
-				setState(47);
+				setState(51);
 				then();
 				}
 				break;
@@ -507,7 +537,7 @@ public class hcclParser extends Parser {
 				_localctx = new GET_CONTRACTContext(_localctx);
 				enterOuterAlt(_localctx, 5);
 				{
-				setState(48);
+				setState(52);
 				get();
 				}
 				break;
@@ -515,8 +545,24 @@ public class hcclParser extends Parser {
 				_localctx = new ANYTIME_CONTRACTContext(_localctx);
 				enterOuterAlt(_localctx, 6);
 				{
-				setState(49);
+				setState(53);
 				anytime();
+				}
+				break;
+			case And:
+				_localctx = new AND_CONTRACTContext(_localctx);
+				enterOuterAlt(_localctx, 7);
+				{
+				setState(54);
+				and();
+				}
+				break;
+			case Or:
+				_localctx = new OR_CONTRACTContext(_localctx);
+				enterOuterAlt(_localctx, 8);
+				{
+				setState(55);
+				or();
 				}
 				break;
 			default:
@@ -560,15 +606,15 @@ public class hcclParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(52);
+			setState(58);
 			match(Scale);
-			setState(53);
+			setState(59);
 			match(ObsDouble);
-			setState(54);
+			setState(60);
 			match(T__0);
-			setState(55);
+			setState(61);
 			complexContract();
-			setState(56);
+			setState(62);
 			match(T__1);
 			}
 		}
@@ -608,13 +654,13 @@ public class hcclParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(58);
+			setState(64);
 			match(Give);
-			setState(59);
+			setState(65);
 			match(T__0);
-			setState(60);
+			setState(66);
 			complexContract();
-			setState(61);
+			setState(67);
 			match(T__1);
 			}
 		}
@@ -655,15 +701,15 @@ public class hcclParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(63);
+			setState(69);
 			match(Truncate);
-			setState(64);
+			setState(70);
 			match(Date);
-			setState(65);
+			setState(71);
 			match(T__0);
-			setState(66);
+			setState(72);
 			complexContract();
-			setState(67);
+			setState(73);
 			match(T__1);
 			}
 		}
@@ -706,15 +752,15 @@ public class hcclParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(69);
+			setState(75);
 			match(Then);
-			setState(70);
+			setState(76);
 			match(T__0);
-			setState(71);
+			setState(77);
 			complexContract();
-			setState(72);
+			setState(78);
 			complexContract();
-			setState(73);
+			setState(79);
 			match(T__1);
 			}
 		}
@@ -754,13 +800,13 @@ public class hcclParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(75);
+			setState(81);
 			match(Get);
-			setState(76);
+			setState(82);
 			match(T__0);
-			setState(77);
+			setState(83);
 			complexContract();
-			setState(78);
+			setState(84);
 			match(T__1);
 			}
 		}
@@ -800,13 +846,115 @@ public class hcclParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(80);
+			setState(86);
 			match(Anytime);
-			setState(81);
+			setState(87);
 			match(T__0);
-			setState(82);
+			setState(88);
 			complexContract();
-			setState(83);
+			setState(89);
+			match(T__1);
+			}
+		}
+		catch (RecognitionException re) {
+			_localctx.exception = re;
+			_errHandler.reportError(this, re);
+			_errHandler.recover(this, re);
+		}
+		finally {
+			exitRule();
+		}
+		return _localctx;
+	}
+
+	public static class AndContext extends ParserRuleContext {
+		public TerminalNode And() { return getToken(hcclParser.And, 0); }
+		public List<ComplexContractContext> complexContract() {
+			return getRuleContexts(ComplexContractContext.class);
+		}
+		public ComplexContractContext complexContract(int i) {
+			return getRuleContext(ComplexContractContext.class,i);
+		}
+		public AndContext(ParserRuleContext parent, int invokingState) {
+			super(parent, invokingState);
+		}
+		@Override public int getRuleIndex() { return RULE_and; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof hcclListener ) ((hcclListener)listener).enterAnd(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof hcclListener ) ((hcclListener)listener).exitAnd(this);
+		}
+	}
+
+	public final AndContext and() throws RecognitionException {
+		AndContext _localctx = new AndContext(_ctx, getState());
+		enterRule(_localctx, 24, RULE_and);
+		try {
+			enterOuterAlt(_localctx, 1);
+			{
+			setState(91);
+			match(And);
+			setState(92);
+			match(T__0);
+			setState(93);
+			complexContract();
+			setState(94);
+			complexContract();
+			setState(95);
+			match(T__1);
+			}
+		}
+		catch (RecognitionException re) {
+			_localctx.exception = re;
+			_errHandler.reportError(this, re);
+			_errHandler.recover(this, re);
+		}
+		finally {
+			exitRule();
+		}
+		return _localctx;
+	}
+
+	public static class OrContext extends ParserRuleContext {
+		public TerminalNode Or() { return getToken(hcclParser.Or, 0); }
+		public List<ComplexContractContext> complexContract() {
+			return getRuleContexts(ComplexContractContext.class);
+		}
+		public ComplexContractContext complexContract(int i) {
+			return getRuleContext(ComplexContractContext.class,i);
+		}
+		public OrContext(ParserRuleContext parent, int invokingState) {
+			super(parent, invokingState);
+		}
+		@Override public int getRuleIndex() { return RULE_or; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof hcclListener ) ((hcclListener)listener).enterOr(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof hcclListener ) ((hcclListener)listener).exitOr(this);
+		}
+	}
+
+	public final OrContext or() throws RecognitionException {
+		OrContext _localctx = new OrContext(_ctx, getState());
+		enterRule(_localctx, 26, RULE_or);
+		try {
+			enterOuterAlt(_localctx, 1);
+			{
+			setState(97);
+			match(Or);
+			setState(98);
+			match(T__0);
+			setState(99);
+			complexContract();
+			setState(100);
+			complexContract();
+			setState(101);
 			match(T__1);
 			}
 		}
@@ -822,27 +970,30 @@ public class hcclParser extends Parser {
 	}
 
 	public static final String _serializedATN =
-		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\27X\4\2\t\2\4\3\t"+
+		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\27j\4\2\t\2\4\3\t"+
 		"\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\4\b\t\b\4\t\t\t\4\n\t\n\4\13\t\13\4"+
-		"\f\t\f\4\r\t\r\3\2\3\2\3\2\3\2\3\2\5\2 \n\2\3\3\3\3\5\3$\n\3\3\4\3\4\5"+
-		"\4(\n\4\3\5\3\5\3\6\3\6\3\6\3\7\3\7\3\7\3\7\3\7\3\7\5\7\65\n\7\3\b\3\b"+
-		"\3\b\3\b\3\b\3\b\3\t\3\t\3\t\3\t\3\t\3\n\3\n\3\n\3\n\3\n\3\n\3\13\3\13"+
-		"\3\13\3\13\3\13\3\13\3\f\3\f\3\f\3\f\3\f\3\r\3\r\3\r\3\r\3\r\3\r\2\2\16"+
-		"\2\4\6\b\n\f\16\20\22\24\26\30\2\2\2S\2\37\3\2\2\2\4#\3\2\2\2\6\'\3\2"+
-		"\2\2\b)\3\2\2\2\n+\3\2\2\2\f\64\3\2\2\2\16\66\3\2\2\2\20<\3\2\2\2\22A"+
-		"\3\2\2\2\24G\3\2\2\2\26M\3\2\2\2\30R\3\2\2\2\32 \5\4\3\2\33\34\5\4\3\2"+
-		"\34\35\7\5\2\2\35\36\5\2\2\2\36 \3\2\2\2\37\32\3\2\2\2\37\33\3\2\2\2 "+
-		"\3\3\2\2\2!$\5\6\4\2\"$\5\f\7\2#!\3\2\2\2#\"\3\2\2\2$\5\3\2\2\2%(\5\b"+
-		"\5\2&(\5\n\6\2\'%\3\2\2\2\'&\3\2\2\2(\7\3\2\2\2)*\7\b\2\2*\t\3\2\2\2+"+
-		",\7\7\2\2,-\7\6\2\2-\13\3\2\2\2.\65\5\16\b\2/\65\5\20\t\2\60\65\5\22\n"+
-		"\2\61\65\5\24\13\2\62\65\5\26\f\2\63\65\5\30\r\2\64.\3\2\2\2\64/\3\2\2"+
-		"\2\64\60\3\2\2\2\64\61\3\2\2\2\64\62\3\2\2\2\64\63\3\2\2\2\65\r\3\2\2"+
-		"\2\66\67\7\t\2\2\678\7\23\2\289\7\3\2\29:\5\2\2\2:;\7\4\2\2;\17\3\2\2"+
-		"\2<=\7\n\2\2=>\7\3\2\2>?\5\2\2\2?@\7\4\2\2@\21\3\2\2\2AB\7\r\2\2BC\7\21"+
-		"\2\2CD\7\3\2\2DE\5\2\2\2EF\7\4\2\2F\23\3\2\2\2GH\7\16\2\2HI\7\3\2\2IJ"+
-		"\5\2\2\2JK\5\2\2\2KL\7\4\2\2L\25\3\2\2\2MN\7\17\2\2NO\7\3\2\2OP\5\2\2"+
-		"\2PQ\7\4\2\2Q\27\3\2\2\2RS\7\20\2\2ST\7\3\2\2TU\5\2\2\2UV\7\4\2\2V\31"+
-		"\3\2\2\2\6\37#\'\64";
+		"\f\t\f\4\r\t\r\4\16\t\16\4\17\t\17\3\2\3\2\3\2\3\2\3\2\5\2$\n\2\3\3\3"+
+		"\3\5\3(\n\3\3\4\3\4\5\4,\n\4\3\5\3\5\3\6\3\6\3\6\3\7\3\7\3\7\3\7\3\7\3"+
+		"\7\3\7\3\7\5\7;\n\7\3\b\3\b\3\b\3\b\3\b\3\b\3\t\3\t\3\t\3\t\3\t\3\n\3"+
+		"\n\3\n\3\n\3\n\3\n\3\13\3\13\3\13\3\13\3\13\3\13\3\f\3\f\3\f\3\f\3\f\3"+
+		"\r\3\r\3\r\3\r\3\r\3\16\3\16\3\16\3\16\3\16\3\16\3\17\3\17\3\17\3\17\3"+
+		"\17\3\17\3\17\2\2\20\2\4\6\b\n\f\16\20\22\24\26\30\32\34\2\2\2e\2#\3\2"+
+		"\2\2\4\'\3\2\2\2\6+\3\2\2\2\b-\3\2\2\2\n/\3\2\2\2\f:\3\2\2\2\16<\3\2\2"+
+		"\2\20B\3\2\2\2\22G\3\2\2\2\24M\3\2\2\2\26S\3\2\2\2\30X\3\2\2\2\32]\3\2"+
+		"\2\2\34c\3\2\2\2\36$\5\4\3\2\37 \5\4\3\2 !\7\5\2\2!\"\5\2\2\2\"$\3\2\2"+
+		"\2#\36\3\2\2\2#\37\3\2\2\2$\3\3\2\2\2%(\5\6\4\2&(\5\f\7\2\'%\3\2\2\2\'"+
+		"&\3\2\2\2(\5\3\2\2\2),\5\b\5\2*,\5\n\6\2+)\3\2\2\2+*\3\2\2\2,\7\3\2\2"+
+		"\2-.\7\b\2\2.\t\3\2\2\2/\60\7\7\2\2\60\61\7\6\2\2\61\13\3\2\2\2\62;\5"+
+		"\16\b\2\63;\5\20\t\2\64;\5\22\n\2\65;\5\24\13\2\66;\5\26\f\2\67;\5\30"+
+		"\r\28;\5\32\16\29;\5\34\17\2:\62\3\2\2\2:\63\3\2\2\2:\64\3\2\2\2:\65\3"+
+		"\2\2\2:\66\3\2\2\2:\67\3\2\2\2:8\3\2\2\2:9\3\2\2\2;\r\3\2\2\2<=\7\t\2"+
+		"\2=>\7\23\2\2>?\7\3\2\2?@\5\2\2\2@A\7\4\2\2A\17\3\2\2\2BC\7\n\2\2CD\7"+
+		"\3\2\2DE\5\2\2\2EF\7\4\2\2F\21\3\2\2\2GH\7\r\2\2HI\7\21\2\2IJ\7\3\2\2"+
+		"JK\5\2\2\2KL\7\4\2\2L\23\3\2\2\2MN\7\16\2\2NO\7\3\2\2OP\5\2\2\2PQ\5\2"+
+		"\2\2QR\7\4\2\2R\25\3\2\2\2ST\7\17\2\2TU\7\3\2\2UV\5\2\2\2VW\7\4\2\2W\27"+
+		"\3\2\2\2XY\7\20\2\2YZ\7\3\2\2Z[\5\2\2\2[\\\7\4\2\2\\\31\3\2\2\2]^\7\13"+
+		"\2\2^_\7\3\2\2_`\5\2\2\2`a\5\2\2\2ab\7\4\2\2b\33\3\2\2\2cd\7\f\2\2de\7"+
+		"\3\2\2ef\5\2\2\2fg\5\2\2\2gh\7\4\2\2h\35\3\2\2\2\6#\'+:";
 	public static final ATN _ATN =
 		new ATNDeserializer().deserialize(_serializedATN.toCharArray());
 	static {

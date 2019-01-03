@@ -159,6 +159,30 @@ public class hcclBaseListener implements hcclListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterAND_CONTRACT(hcclParser.AND_CONTRACTContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitAND_CONTRACT(hcclParser.AND_CONTRACTContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterOR_CONTRACT(hcclParser.OR_CONTRACTContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitOR_CONTRACT(hcclParser.OR_CONTRACTContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterScale(hcclParser.ScaleContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -226,6 +250,30 @@ public class hcclBaseListener implements hcclListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitAnytime(hcclParser.AnytimeContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterAnd(hcclParser.AndContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitAnd(hcclParser.AndContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterOr(hcclParser.OrContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitOr(hcclParser.OrContext ctx) { }
 
 	/**
 	 * {@inheritDoc}

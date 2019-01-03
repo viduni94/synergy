@@ -52,6 +52,7 @@ get
 anytime
     : Anytime '(' complexContract ')';
 
+
 //Lexer Rules
 Operator
     : '`and`'
@@ -74,12 +75,6 @@ Scale
 
 Give
     : 'give';
-
-And
-    : 'and';
-
-Or
-    : 'or';
 
 Truncate
     : 'truncate';

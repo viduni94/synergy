@@ -8,7 +8,7 @@ function contractCreation(tree) {
         `pragma experimental ABIEncoderV2;\n` +
         `import {BaseContract, Marketplace} from './Marketplace.sol';\n`;
 
-    fs.writeFileSync("./contractFiles/test.sol", headers, function(err) {
+    fs.writeFileSync("./contractFiles/one.sol", headers, function(err) {
         if(err) {
             return console.log(err);
         }
@@ -22,10 +22,11 @@ function contractCreation(tree) {
         contract = contract + `contract ${contractName} is baseContract {\n` +
             `   constructor(Marketplace marketplace, string horizon, int value) public BaseContract(marketplace, value, horizon) {\n` +
             `   }\n`+
-            `   function proceed() public{\n` +
+            `   function proceed() public whenAlive{\n` +
             `       baseContract c = new c();\n` +
-            `       marketplace.get(c);\n` +
+            `       marketplace_.get(c);\n` +
             `       c.proceed();\n` +
+            `       kill();\n`+
             `   }\n` +
             `}\n`;
     }
@@ -33,15 +34,16 @@ function contractCreation(tree) {
         contract = contract + `contract ${contractName} is baseContract {\n` +
             `   constructor(Marketplace marketplace, string horizon, int value) public BaseContract(marketplace, value, horizon) {\n` +
             `   }\n`+
-            `   function proceed() public{\n` +
+            `   function proceed() public whenAlive{\n` +
             `       baseContract c = new c();\n` +
-            `       marketplace.give(c);\n` +
+            `       marketplace_.give(c);\n` +
             `       c.proceed();\n` +
+            `       kill();\n`+
             `   }\n` +
             `}\n`;
     }
     console.log(contract);
-    fs.appendFile("./contractFiles/test.sol", contract, function (err) {
+    fs.appendFile("./contractFiles/one.sol", contract, function (err) {
         if (err) {
             return console.log(err);
         }
@@ -114,11 +116,11 @@ function recurse (tree, list) {
                 `   constructor(Marketplace marketplace, string horizon, int value) public BaseContract(marketplace, value, horizon) {\n` +
                 `   }\n` +
                 `   function proceed() public{\n` +
-                `       marketplace.receive(${commodity}, ${quantity})` +
+                `       marketplace_.receive(${commodity}, ${quantity});\n` +
                 `   }\n` +
                 `}\n`;
 
-            fs.appendFile("./contractFiles/test.sol", contract, function (err) {
+            fs.appendFile("./contractFiles/one.sol", contract, function (err) {
                 if (err) {
                     return console.log(err);
                 }
@@ -138,12 +140,12 @@ function recurse (tree, list) {
                 `   constructor(Marketplace marketplace, string horizon, int value) public BaseContract(marketplace, value, horizon) {\n` +
                 `   }\n` +
                 `   function proceed() public{\n` +
-                `       marketplace.receive(${commodity}, ${quantity})` +
+                `       marketplace_.receive(${commodity}, ${quantity});\n` +
                 `   }\n` +
                 `}\n`;
 
 
-            fs.appendFile("./contractFiles/test.sol", contract, function (err) {
+            fs.appendFile("./contractFiles/one.sol", contract, function (err) {
                 if (err) {
                     return console.log(err);
                 }

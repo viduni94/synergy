@@ -143,6 +143,30 @@ public interface hcclListener extends ParseTreeListener {
 	 */
 	void exitANYTIME_CONTRACT(hcclParser.ANYTIME_CONTRACTContext ctx);
 	/**
+	 * Enter a parse tree produced by the {@code AND_CONTRACT}
+	 * labeled alternative in {@link hcclParser#compositePrimitve}.
+	 * @param ctx the parse tree
+	 */
+	void enterAND_CONTRACT(hcclParser.AND_CONTRACTContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code AND_CONTRACT}
+	 * labeled alternative in {@link hcclParser#compositePrimitve}.
+	 * @param ctx the parse tree
+	 */
+	void exitAND_CONTRACT(hcclParser.AND_CONTRACTContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code OR_CONTRACT}
+	 * labeled alternative in {@link hcclParser#compositePrimitve}.
+	 * @param ctx the parse tree
+	 */
+	void enterOR_CONTRACT(hcclParser.OR_CONTRACTContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code OR_CONTRACT}
+	 * labeled alternative in {@link hcclParser#compositePrimitve}.
+	 * @param ctx the parse tree
+	 */
+	void exitOR_CONTRACT(hcclParser.OR_CONTRACTContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link hcclParser#scale}.
 	 * @param ctx the parse tree
 	 */
@@ -202,4 +226,24 @@ public interface hcclListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitAnytime(hcclParser.AnytimeContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link hcclParser#and}.
+	 * @param ctx the parse tree
+	 */
+	void enterAnd(hcclParser.AndContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link hcclParser#and}.
+	 * @param ctx the parse tree
+	 */
+	void exitAnd(hcclParser.AndContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link hcclParser#or}.
+	 * @param ctx the parse tree
+	 */
+	void enterOr(hcclParser.OrContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link hcclParser#or}.
+	 * @param ctx the parse tree
+	 */
+	void exitOr(hcclParser.OrContext ctx);
 }
