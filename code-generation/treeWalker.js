@@ -8,7 +8,7 @@ function contractCreation(tree) {
         `pragma experimental ABIEncoderV2;\n` +
         `import {BaseContract, Marketplace} from './Marketplace.sol';\n`;
 
-    fs.writeFileSync("./contractFiles/one.sol", headers, function(err) {
+    fs.writeFileSync("./contractFiles/test.sol", headers, function(err) {
         if(err) {
             return console.log(err);
         }
@@ -43,7 +43,7 @@ function contractCreation(tree) {
             `}\n`;
     }
     console.log(contract);
-    fs.appendFile("./contractFiles/one.sol", contract, function (err) {
+    fs.appendFile("./contractFiles/test.sol", contract, function (err) {
         if (err) {
             return console.log(err);
         }
@@ -120,7 +120,7 @@ function recurse (tree, list) {
                 `   }\n` +
                 `}\n`;
 
-            fs.appendFile("./contractFiles/one.sol", contract, function (err) {
+            fs.appendFile("./contractFiles/test.sol", contract, function (err) {
                 if (err) {
                     return console.log(err);
                 }
@@ -145,7 +145,7 @@ function recurse (tree, list) {
                 `}\n`;
 
 
-            fs.appendFile("./contractFiles/one.sol", contract, function (err) {
+            fs.appendFile("./contractFiles/test.sol", contract, function (err) {
                 if (err) {
                     return console.log(err);
                 }

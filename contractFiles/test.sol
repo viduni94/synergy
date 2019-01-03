@@ -5,14 +5,16 @@ contract c is baseContract {
    constructor(Marketplace marketplace, string horizon, int value) public BaseContract(marketplace, value, horizon) {
    }
    function proceed() public{
-       marketplace.receive(GBP, 100)   }
+       marketplace_.receive(Marketplace.Commodity.USD, 100);
+   }
 }
 contract wrapper is baseContract {
    constructor(Marketplace marketplace, string horizon, int value) public BaseContract(marketplace, value, horizon) {
    }
-   function proceed() public{
+   function proceed() public whenAlive{
        baseContract c = new c();
-       marketplace.get(c);
+       marketplace_.get(c);
        c.proceed();
+       kill();
    }
 }
