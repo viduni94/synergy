@@ -116,7 +116,7 @@ function recurse (tree, list) {
                 `   constructor(Marketplace marketplace, string horizon, int value) public BaseContract(marketplace, value, horizon) {\n` +
                 `   }\n` +
                 `   function proceed() public{\n` +
-                `       marketplace_.receive(${commodity}, ${quantity});\n` +
+                `       marketplace_.receive(Marketplace.Commodity.${commodity}, ${quantity});\n` +
                 `   }\n` +
                 `}\n`;
 
@@ -140,7 +140,7 @@ function recurse (tree, list) {
                 `   constructor(Marketplace marketplace, string horizon, int value) public BaseContract(marketplace, value, horizon) {\n` +
                 `   }\n` +
                 `   function proceed() public{\n` +
-                `       marketplace_.receive(${commodity}, ${quantity});\n` +
+                `       marketplace_.receive(Marketplace.Commodity.${commodity}, ${quantity});\n` +
                 `   }\n` +
                 `}\n`;
 

@@ -6,7 +6,7 @@ contract c is baseContract {
     constructor(Marketplace marketplace, string horizon, int value) public BaseContract(marketplace, value, horizon) {
     }
     function proceed() public{
-        marketplace_.receive(GBP, 1);
+        marketplace_.receive(Marketplace.Commodity.GBP, 1);
     }
 }
 
