@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="db63df21-1594-4c89-96fe-5fbc485fe277" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code-generation/treeWalker.js" beforeDir="false" afterPath="$PROJECT_DIR$/code-generation/treeWalker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contractFiles/test.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contractFiles/test.sol" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MarketplaceContract.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/MarketplaceContract.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,7 +34,7 @@
           <entry key="js" value="39" />
           <entry key="json" value="1" />
           <entry key="md" value="1" />
-          <entry key="sol" value="17" />
+          <entry key="sol" value="19" />
           <entry key="tokens" value="2" />
           <entry key="ts" value="2" />
         </counts>
@@ -50,7 +47,7 @@
           <entry key="JavaScript" value="39" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="5" />
-          <entry key="Solidity file" value="17" />
+          <entry key="Solidity file" value="19" />
           <entry key="TypeScript" value="2" />
         </counts>
       </usages-collector>
@@ -59,7 +56,7 @@
           <entry key="g4" value="290" />
           <entry key="js" value="8516" />
           <entry key="json" value="74" />
-          <entry key="sol" value="32" />
+          <entry key="sol" value="119" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -67,7 +64,7 @@
           <entry key="ANTLR v4 grammar file" value="290" />
           <entry key="JSON" value="74" />
           <entry key="JavaScript" value="8516" />
-          <entry key="Solidity file" value="32" />
+          <entry key="Solidity file" value="119" />
         </counts>
       </usages-collector>
     </session>
@@ -95,8 +92,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/code-generation/treeWalker.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1844">
-              <caret line="144" column="67" selection-start-line="144" selection-start-column="67" selection-end-line="144" selection-end-column="67" />
+            <state relative-caret-position="394">
+              <caret line="38" column="44" lean-forward="true" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -110,11 +107,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/contractFiles/test.sol">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="60" lean-forward="true" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="60" />
+            <state>
+              <caret lean-forward="true" selection-end-line="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/contractFiles/test1.sol">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/contractFiles/zero.sol">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
@@ -197,6 +212,8 @@
         <option value="$PROJECT_DIR$/src/MarketplaceContract.js" />
         <option value="$PROJECT_DIR$/contractFiles/test.sol" />
         <option value="$PROJECT_DIR$/code-generation/treeWalker.js" />
+        <option value="$PROJECT_DIR$/contractFiles/zero.sol" />
+        <option value="$PROJECT_DIR$/contractFiles/test1.sol" />
       </list>
     </option>
   </component>
@@ -300,7 +317,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546535966268" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546581627907" />
     <property name="javascript.nodejs.core.library.configured.version" value="8.8.1" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -390,15 +407,16 @@
       <workItem from="1545363472958" duration="2516000" />
       <workItem from="1545862531831" duration="10188000" />
       <workItem from="1546149999975" duration="15633000" />
-      <workItem from="1546341070772" duration="26424000" />
+      <workItem from="1546341070772" duration="27791000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116276000" />
+    <option name="totallyTimeSpent" value="117643000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1919" height="1119" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="UI Designer" order="0" />
       <window_info id="Favorites" order="1" side_tool="true" />
@@ -675,17 +693,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/contractFiles/zero.sol">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/code-generation/treeWalker.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1844">
-          <caret line="144" column="67" selection-start-line="144" selection-start-column="67" selection-end-line="144" selection-end-column="67" />
+        <state relative-caret-position="394">
+          <caret line="38" column="44" lean-forward="true" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/contractFiles/test.sol">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="60" lean-forward="true" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="60" />
+        <state>
+          <caret lean-forward="true" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contractFiles/test1.sol">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
         </state>
       </provider>
     </entry>
