@@ -1,5 +1,5 @@
 let Headers =
-    "pragma solidity ^0.4.23;\n" +
+    "pragma solidity ^0.5.2;\n" +
     "pragma experimental ABIEncoderV2;\n" +
     "\n";
 
@@ -11,13 +11,15 @@ let BaseContract =
     "\n" +
     "    Marketplace public marketplace_;\n" +
     "    int public scale_;\n" +
+    "    string public horizon_;\n"+
     "\n" +
     "    address public creator_;\n" +
     "    bool public alive_ = true;\n" +
     "\n" +
-    "    constructor(Marketplace marketplace, int scale) public {\n" +
+    "    constructor(Marketplace marketplace, string memory horizon, int scale) public {\n" +
     "    \tmarketplace_ = marketplace;\n" +
     "    \tscale_ = scale;\n" +
+    "    \thorizon_ = horizon;\n"+
     "    \tcreator_ = msg.sender;\n" +
     "    }\n" +
     "\n" +
@@ -66,12 +68,12 @@ let Marketplace =
     "          creator_ = msg.sender;\n" +
     "      }\n" +
     "\n" +
-    "      function signed(address contractAddress) public constant returns (bool) {\n" +
+    "      function signed(address contractAddress) public view returns (bool) {\n" +
     "          return contracts_[contractAddress].signed;\n" +
     "      }\n" +
     "\n" +
-    "      function propose(BaseContract contractAddress, address to) public {\n" +
-    "          require(contractAddress.creator_() == msg.sender);\n" +
+    "      function propose(address contractAddress, address to) public {\n" +
+    "          require(creator_ == msg.sender);\n" +
     "          // is being requested by creator of contract\n" +
     "          require(!contracts_[contractAddress].signed);\n" +
     "          // has not already been signed\n" +

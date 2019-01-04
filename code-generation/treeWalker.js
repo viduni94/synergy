@@ -4,7 +4,7 @@ function contractCreation(tree) {
     let list = [];
     let contractName = "wrapper";
     let headers = `` +
-        `pragma solidity ^0.4.21;\n` +
+        `pragma solidity ^0.5.2;\n` +
         `pragma experimental ABIEncoderV2;\n` +
         `import {BaseContract, Marketplace} from './Marketplace.sol';\n`;
 
@@ -19,26 +19,26 @@ function contractCreation(tree) {
     list = recurse(tree, list);
     console.log(list);
     if( list[0] === 'gt'){
-        contract = contract + `contract ${contractName} is baseContract {\n` +
-            `   constructor(Marketplace marketplace, string horizon, int value) public BaseContract(marketplace, value, horizon) {\n` +
+        contract = contract + `contract ${contractName} is BaseContract {\n` +
+            `   constructor(Marketplace marketplace, string memory horizon, int scale) public BaseContract(marketplace, horizon, scale) {\n` +
             `   }\n`+
-            `   function proceed() public whenAlive{\n` +
-            `       baseContract c = new c();\n` +
-            `       marketplace_.get(c);\n` +
-            `       c.proceed();\n` +
-            `       kill();\n`+
+            `   function proceed() public alive{\n` +
+            `       c newContract = new c(marketplace_, horizon_, scale_);\n` +
+            `       marketplace_.get(newContract);\n` +
+            `       newContract.proceed();\n` +
+            `       kill(BaseContract.KillReason.EXECUTED);\n`+
             `   }\n` +
             `}\n`;
     }
     else if(list[0] === 'gv'){
-        contract = contract + `contract ${contractName} is baseContract {\n` +
-            `   constructor(Marketplace marketplace, string horizon, int value) public BaseContract(marketplace, value, horizon) {\n` +
+        contract = contract + `contract ${contractName} is BaseContract {\n` +
+            `   constructor(Marketplace marketplace, string memory horizon, int scale) public BaseContract(marketplace, horizon, scale) {\n` +
             `   }\n`+
-            `   function proceed() public whenAlive{\n` +
-            `       baseContract c = new c();\n` +
-            `       marketplace_.give(c);\n` +
-            `       c.proceed();\n` +
-            `       kill();\n`+
+            `   function proceed() public alive{\n` +
+            `       c newContract = new c(marketplace_, horizon_, scale_);\n` +
+            `       marketplace_.give(newContract);\n` +
+            `       newContract.proceed();\n` +
+            `       kill(BaseContract.KillReason.EXECUTED);\n`+
             `   }\n` +
             `}\n`;
     }
@@ -112,11 +112,12 @@ function recurse (tree, list) {
             let quantity = tempList[1].contractValue[0];
             let contractName = "c";
             let contract = `` +
-                `contract ${contractName} is baseContract {\n` +
-                `   constructor(Marketplace marketplace, string horizon, int value) public BaseContract(marketplace, value, horizon) {\n` +
+                `contract ${contractName} is BaseContract {\n` +
+                `   constructor(Marketplace marketplace, string memory horizon, int scale) public BaseContract(marketplace, horizon, scale) {\n` +
                 `   }\n` +
-                `   function proceed() public{\n` +
+                `   function proceed() public alive{\n` +
                 `       marketplace_.receive(Marketplace.Commodity.${commodity}, ${quantity});\n` +
+                `       kill(BaseContract.KillReason.EXECUTED);\n`+
                 `   }\n` +
                 `}\n`;
 
@@ -136,11 +137,12 @@ function recurse (tree, list) {
             let commodity = tempList[1].contractValue[1];
             let quantity = tempList[1].contractValue[0];
             let contract = `` +
-                `contract ${contractName} is baseContract {\n` +
-                `   constructor(Marketplace marketplace, string horizon, int value) public BaseContract(marketplace, value, horizon) {\n` +
+                `contract ${contractName} is BaseContract {\n` +
+                `   constructor(Marketplace marketplace, string memory horizon, int scale) public BaseContract(marketplace, horizon, scale) {\n` +
                 `   }\n` +
-                `   function proceed() public{\n` +
+                `   function proceed() public alive{\n` +
                 `       marketplace_.receive(Marketplace.Commodity.${commodity}, ${quantity});\n` +
+                `       kill(BaseContract.KillReason.EXECUTED);\n`+
                 `   }\n` +
                 `}\n`;
 
