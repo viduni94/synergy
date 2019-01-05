@@ -32,7 +32,7 @@
           <entry key="gitattributes" value="1" />
           <entry key="interp" value="2" />
           <entry key="js" value="39" />
-          <entry key="json" value="1" />
+          <entry key="json" value="2" />
           <entry key="md" value="1" />
           <entry key="sol" value="19" />
           <entry key="tokens" value="2" />
@@ -43,7 +43,7 @@
         <counts>
           <entry key="ANTLR v4 grammar file" value="7" />
           <entry key="CLASS" value="1" />
-          <entry key="JSON" value="1" />
+          <entry key="JSON" value="2" />
           <entry key="JavaScript" value="39" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="5" />
@@ -55,14 +55,14 @@
         <counts>
           <entry key="g4" value="290" />
           <entry key="js" value="8516" />
-          <entry key="json" value="74" />
+          <entry key="json" value="120" />
           <entry key="sol" value="119" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="ANTLR v4 grammar file" value="290" />
-          <entry key="JSON" value="74" />
+          <entry key="JSON" value="120" />
           <entry key="JavaScript" value="8516" />
           <entry key="Solidity file" value="119" />
         </counts>
@@ -71,15 +71,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MarketplaceContract.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -116,11 +107,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/contractFiles/test1.sol">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="465">
               <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jsonFiles/marketplace.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="505">
+              <caret line="259" column="10" lean-forward="true" selection-start-line="259" selection-start-column="10" selection-end-line="259" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -214,6 +214,7 @@
         <option value="$PROJECT_DIR$/code-generation/treeWalker.js" />
         <option value="$PROJECT_DIR$/contractFiles/zero.sol" />
         <option value="$PROJECT_DIR$/contractFiles/test1.sol" />
+        <option value="$PROJECT_DIR$/jsonFiles/marketplace.json" />
       </list>
     </option>
   </component>
@@ -289,22 +290,6 @@
             <path>
               <item name="synergy" type="b2602c69:ProjectViewProjectNode" />
               <item name="synergy" type="462c0819:PsiDirectoryNode" />
-              <item name="contractFiles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="synergy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="synergy" type="462c0819:PsiDirectoryNode" />
-              <item name="grammar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="synergy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="synergy" type="462c0819:PsiDirectoryNode" />
-              <item name="grammar" type="462c0819:PsiDirectoryNode" />
-              <item name="output1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="synergy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="synergy" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -317,7 +302,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546581627907" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546674127482" />
     <property name="javascript.nodejs.core.library.configured.version" value="8.8.1" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -407,12 +392,12 @@
       <workItem from="1545363472958" duration="2516000" />
       <workItem from="1545862531831" duration="10188000" />
       <workItem from="1546149999975" duration="15633000" />
-      <workItem from="1546341070772" duration="27791000" />
+      <workItem from="1546341070772" duration="28075000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117643000" />
+    <option name="totallyTimeSpent" value="117927000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1919" height="1119" extended-state="0" />
@@ -423,7 +408,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.12999468" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.12999468" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Inspection Results" order="0" weight="0.32915717" />
       <window_info anchor="bottom" id="Tool Output" order="1" weight="0.32967034" />
@@ -431,7 +416,7 @@
       <window_info anchor="bottom" id="Database Changes" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="ANTLR Preview" order="5" weight="0.32967034" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="6" visible="true" weight="0.2794547" />
+      <window_info anchor="bottom" id="Terminal" order="6" visible="true" weight="0.2794547" />
       <window_info anchor="bottom" id="Message" order="7" />
       <window_info anchor="bottom" id="Find" order="8" weight="0.32967034" />
       <window_info anchor="bottom" id="Run" order="9" />
@@ -718,6 +703,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
           <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jsonFiles/marketplace.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="259" column="10" lean-forward="true" selection-start-line="259" selection-start-column="10" selection-end-line="259" selection-end-column="10" />
         </state>
       </provider>
     </entry>
