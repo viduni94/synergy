@@ -28,6 +28,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="1" />
+          <entry key="executionCosts" value="1" />
           <entry key="g4" value="7" />
           <entry key="gitattributes" value="1" />
           <entry key="interp" value="2" />
@@ -46,24 +47,26 @@
           <entry key="JSON" value="2" />
           <entry key="JavaScript" value="39" />
           <entry key="Markdown" value="1" />
-          <entry key="PLAIN_TEXT" value="5" />
+          <entry key="PLAIN_TEXT" value="6" />
           <entry key="Solidity file" value="19" />
           <entry key="TypeScript" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="executionCosts" value="4" />
           <entry key="g4" value="290" />
           <entry key="js" value="8516" />
-          <entry key="json" value="120" />
+          <entry key="json" value="122" />
           <entry key="sol" value="119" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="ANTLR v4 grammar file" value="290" />
-          <entry key="JSON" value="120" />
+          <entry key="JSON" value="122" />
           <entry key="JavaScript" value="8516" />
+          <entry key="PLAIN_TEXT" value="4" />
           <entry key="Solidity file" value="119" />
         </counts>
       </usages-collector>
@@ -84,7 +87,7 @@
         <entry file="file://$PROJECT_DIR$/code-generation/treeWalker.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="394">
-              <caret line="38" column="44" lean-forward="true" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
+              <caret line="38" column="44" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -102,7 +105,7 @@
         <entry file="file://$PROJECT_DIR$/contractFiles/test.sol">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret lean-forward="true" selection-end-line="21" />
+              <caret selection-end-line="21" />
             </state>
           </provider>
         </entry>
@@ -116,11 +119,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jsonFiles/marketplace.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="505">
-              <caret line="259" column="10" lean-forward="true" selection-start-line="259" selection-start-column="10" selection-end-line="259" selection-end-column="10" />
+            <state relative-caret-position="-3035">
+              <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/executionCosts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="34" lean-forward="true" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -129,7 +141,7 @@
         <entry file="file://$PROJECT_DIR$/contractFiles/zero.sol">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
@@ -138,7 +150,7 @@
         <entry file="file://$PROJECT_DIR$/contractFiles/Marketplace.sol">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-827">
-              <caret line="37" column="12" lean-forward="true" selection-end-line="134" />
+              <caret line="37" column="12" selection-end-line="134" />
             </state>
           </provider>
         </entry>
@@ -148,15 +160,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1140">
               <caret line="76" column="13" selection-start-line="76" selection-start-column="13" selection-end-line="76" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code-generation/astGenerator.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="29" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -215,6 +218,7 @@
         <option value="$PROJECT_DIR$/contractFiles/zero.sol" />
         <option value="$PROJECT_DIR$/contractFiles/test1.sol" />
         <option value="$PROJECT_DIR$/jsonFiles/marketplace.json" />
+        <option value="$PROJECT_DIR$/src/executionCosts" />
       </list>
     </option>
   </component>
@@ -302,7 +306,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546674127482" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546675260333" />
     <property name="javascript.nodejs.core.library.configured.version" value="8.8.1" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -392,12 +396,12 @@
       <workItem from="1545363472958" duration="2516000" />
       <workItem from="1545862531831" duration="10188000" />
       <workItem from="1546149999975" duration="15633000" />
-      <workItem from="1546341070772" duration="28075000" />
+      <workItem from="1546341070772" duration="28862000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117927000" />
+    <option name="totallyTimeSpent" value="118714000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1919" height="1119" extended-state="0" />
@@ -667,7 +671,7 @@
     <entry file="file://$PROJECT_DIR$/contractFiles/Marketplace.sol">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-827">
-          <caret line="37" column="12" lean-forward="true" selection-end-line="134" />
+          <caret line="37" column="12" selection-end-line="134" />
         </state>
       </provider>
     </entry>
@@ -681,21 +685,21 @@
     <entry file="file://$PROJECT_DIR$/contractFiles/zero.sol">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/code-generation/treeWalker.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="394">
-          <caret line="38" column="44" lean-forward="true" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
+          <caret line="38" column="44" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/contractFiles/test.sol">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret lean-forward="true" selection-end-line="21" />
+          <caret selection-end-line="21" />
         </state>
       </provider>
     </entry>
@@ -708,8 +712,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jsonFiles/marketplace.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="259" column="10" lean-forward="true" selection-start-line="259" selection-start-column="10" selection-end-line="259" selection-end-column="10" />
+        <state relative-caret-position="-3035">
+          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/executionCosts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="34" lean-forward="true" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
         </state>
       </provider>
     </entry>
