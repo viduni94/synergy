@@ -306,7 +306,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546675260333" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546777618724" />
     <property name="javascript.nodejs.core.library.configured.version" value="8.8.1" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -396,23 +396,22 @@
       <workItem from="1545363472958" duration="2516000" />
       <workItem from="1545862531831" duration="10188000" />
       <workItem from="1546149999975" duration="15633000" />
-      <workItem from="1546341070772" duration="28862000" />
+      <workItem from="1546341070772" duration="29545000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118714000" />
+    <option name="totallyTimeSpent" value="119397000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1919" height="1119" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="UI Designer" order="0" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.12999468" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.12999468" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Inspection Results" order="0" weight="0.32915717" />
       <window_info anchor="bottom" id="Tool Output" order="1" weight="0.32967034" />
@@ -420,7 +419,7 @@
       <window_info anchor="bottom" id="Database Changes" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="ANTLR Preview" order="5" weight="0.32967034" />
-      <window_info anchor="bottom" id="Terminal" order="6" visible="true" weight="0.2794547" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="6" visible="true" weight="0.2794547" />
       <window_info anchor="bottom" id="Message" order="7" />
       <window_info anchor="bottom" id="Find" order="8" weight="0.32967034" />
       <window_info anchor="bottom" id="Run" order="9" />
